@@ -264,7 +264,7 @@ class PaperController extends Controller
             }            
             else
             {
-                    $src= Yii::app()->basePath."/accepted_papers/ty#@kio12e2qz34%!@216splk53sS13TY2#Weytu23jEC@tp37610@%aR!#lZopPMao[]/j#1%!23JqZdru%@_3349kp_%E43#@!srY97#@!DFG_#@ZP@GL#3@8eP21/accepted_doc_or_docx_papers/$name";          
+                    $src= Yii::app()->basePath."/accepted_papers/ty#@kio12e2qz34%!@216splk53sS1/j#1%!23JqZdru%@_3349kp/accepted_doc_or_docx_papers/$name";          
                     if(file_exists($src) && $name!=null)
                     {            
                         //Yii::app()->getRequest()->sendFile( "$name" , file_get_contents( $src ) );
@@ -321,7 +321,7 @@ class PaperController extends Controller
             }            
             else
             {                                    
-                $src=Yii::app()->basePath.'/accepted_papers/ty#@kio12e2qz34%!@216splk53sS13TY2#Weytu23jEC@tp37610@%aR!#lZopPMao[]/j#1%!23JqZdru%@_3349kp_%E43#@!srY97#@!DFG_#@ZP@GL#3@8eP21/accepted_pdf_versions/'.$name;                             
+                $src=Yii::app()->basePath.'/accepted_papers/ty#@kio12e2qz34%!@216splk53sS1/j#1%!23JqZdru%@_3349kp/accepted_pdf_versions/'.$name;                             
                 if(file_exists($src) && $name!=null)
                 {            
                     Yii::app()->getRequest()->sendFile( "$name" , file_get_contents( $src ) );
@@ -451,7 +451,7 @@ class PaperController extends Controller
                 $checking_paper_status_for_next_action=$this->check_papers_current_status_for_next_action($id);                      
                 if($checking_paper_status_for_next_action==='Author has submitted the final copy of the paper in both format.')
                 {
-                    $src=Yii::app()->basePath.'/accepted_papers/ty#@kio12e2qz34%!@216splk53sS13TY2#Weytu23jEC@tp37610@%aR!#lZopPMao[]/j#1%!23JqZdru%@_3349kp_%E43#@!srY97#@!DFG_#@ZP@GL#3@8eP21/accepted_doc_or_docx_papers/'.$name;
+                    $src=Yii::app()->basePath.'/accepted_papers/ty#@kio12e2qz34%!@216splk53sS1/j#1%!23JqZdru%@_3349kp/accepted_doc_or_docx_papers/'.$name;
                     if(file_exists($src) && $name!=null)
                     {            
                         Yii::app()->getRequest()->sendFile( "$name" , file_get_contents( $src ) );
@@ -619,7 +619,7 @@ class PaperController extends Controller
                 }            
                 else
                 {
-                       $src= Yii::app()->basePath."/accepted_papers/ty#@kio12e2qz34%!@216splk53sS13TY2#Weytu23jEC@tp37610@%aR!#lZopPMao[]/j#1%!23JqZdru%@_3349kp_%E43#@!srY97#@!DFG_#@ZP@GL#3@8eP21/$secured_download_pass";          
+                       $src= Yii::app()->basePath."/accepted_papers/ty#@kio12e2qz34%!@216splk53sS1/j#1%!23JqZdru%@_3349kp/$secured_download_pass";          
                         if(file_exists($src))
                         {            
                                 

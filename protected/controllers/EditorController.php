@@ -315,7 +315,7 @@ class EditorController extends Controller
                         $command=$connection->createCommand($sql);                
                         if($command->execute())
                         {
-                            $model->paper_file->saveAs(Yii::app()->basePath.'/accepted_papers/ty#@kio12e2qz34%!@216splk53sS13TY2#Weytu23jEC@tp37610@%aR!#lZopPMao[]/j#1%!23JqZdru%@_3349kp_%E43#@!srY97#@!DFG_#@ZP@GL#3@8eP21/'.$model->paper_file);
+                            $model->paper_file->saveAs(Yii::app()->basePath.'/accepted_papers/ty#@kio12e2qz34%!@216splk53sS1/j#1%!23JqZdru%@_3349kp/'.$model->paper_file);
                             Yii::app()->user->setFlash('success', "Paper Accepted Successfully!!");
                         }                        
                         else {         
@@ -351,7 +351,7 @@ class EditorController extends Controller
                     $checking_paper_status=$this->check_papers_current_status_for_next_action_for_pdf($paper_title);                
                     if($checking_paper_status==='Author has submitted the final copy of the paper in both format.')
                     {
-                        $src=Yii::app()->basePath.'/accepted_papers/ty#@kio12e2qz34%!@216splk53sS13TY2#Weytu23jEC@tp37610@%aR!#lZopPMao[]/j#1%!23JqZdru%@_3349kp_%E43#@!srY97#@!DFG_#@ZP@GL#3@8eP21/accepted_pdf_versions/'.$paper_title;                             
+                        $src=Yii::app()->basePath.'/accepted_papers/ty#@kio12e2qz34%!@216splk53sS1/j#1%!23JqZdru%@_3349kp/accepted_pdf_versions/'.$paper_title;                             
                         if(file_exists($src) && $name!=null)
                         {            
                             Yii::app()->getRequest()->sendFile( "$name" , file_get_contents( $src ) );
@@ -503,7 +503,7 @@ class EditorController extends Controller
             $pdf="pdf";
             $cut2="{$cut1}.{$pdf}";            
             $name=$cut2;            
-            $src= Yii::app()->basePath.'/accepted_papers/ty#@kio12e2qz34%!@216splk53sS13TY2#Weytu23jEC@tp37610@%aR!#lZopPMao[]/j#1%!23JqZdru%@_3349kp_%E43#@!srY97#@!DFG_#@ZP@GL#3@8eP21/accepted_pdf_versions/'.$name;                             
+            $src= Yii::app()->basePath.'/accepted_papers/ty#@kio12e2qz34%!@216splk53sS1/j#1%!23JqZdru%@_3349kp/accepted_pdf_versions/'.$name;                             
             if(file_exists($src) && $name!=null)
             {            
                 Yii::app()->getRequest()->sendFile( "$name" , file_get_contents( $src ) );
