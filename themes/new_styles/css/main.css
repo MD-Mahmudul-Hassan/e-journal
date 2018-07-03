@@ -679,8 +679,14 @@ div.search-form
     
 }
 
+.navbar-inner{
+    background-color: #5E0001 !important;
+}
+.navbar .nav>li>a{
+    color: #F99B51 !important;
+    text-decoration: none;
 
-
+}
 
 
 

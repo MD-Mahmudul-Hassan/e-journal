@@ -17,8 +17,6 @@ $this->widget('ext.yiibooster.widgets.TbAlert', array('fade' => true,'closeText'
                             ),
                             ));
 
-echo "Notification= ".$counting_notifications;
-
 $notifier;
 if($counting_notifications>0)
 {

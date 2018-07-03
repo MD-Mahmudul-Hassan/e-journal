@@ -7,9 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
         
         
-<!--        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/bootstrap.min.css" />
-        <script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/bootstrap.min.js"></script>
-        <script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/jquery-1.11.0.min.js"></script>-->
+        <!-- <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/bootstrap.min.css" /> -->
+        <!-- <script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/bootstrap.min.js"></script>
+        <script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/jquery-1.11.0.min.js"></script> -->
         
         
         <!-- blueprint CSS framework -->
@@ -95,28 +95,6 @@
                     array('label'=>$user_panel_name, 'url'=>$user_panel_link, 'visible'=>!Yii::app()->user->isGuest),                                 
                     array('label'=>'Options', 'url'=>array('#'), 'visible'=>Yii::app()->user->getId()==='admin'),
                     array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
-                    
-                    
-                    
-//                    array(
-//                        'label' => 'Dropdown',
-//                        'url' => '#',
-//                        'items' => array(
-//                            array('label' => 'Action', 'url' => '#'),
-//                            array('label' => 'Another action', 'url' => '#'),
-//                            array(
-//                                'label' => 'Something else here',
-//                                'url' => '#'
-//                            ),
-//                            '---',
-//                            array('label' => 'NAV HEADER'),
-//                            array('label' => 'Separated link', 'url' => '#'),
-//                            array(
-//                                'label' => 'One more separated link',
-//                                'url' => '#'
-//                            ),
-//                        )
-//                    ),
                 ),
             ),
             
@@ -156,6 +134,7 @@
         'collapse' => false,        // requires bootstrap-responsive.css
         'fixed' => 'bottom',
         'fluid' => true,
+        'htmlOptions'=>array('style'=>'background-color: #5E0001;'),
         'items' => array(
             array(
                 'class' => 'ext.yiibooster.widgets.TbMenu',
@@ -167,26 +146,6 @@
                                 array('label'=>'Policy', 'url'=>array('/site/page','view'=>'policy')), 
                                 array('label'=>'Terms', 'url'=>array('/site/page','view'=>'terms')),
                                 array('label'=>'Contact', 'url'=>array('/site/contact')),
-                    
-//                    array(
-//                        'label' => 'Dropdown',
-//                        'url' => '#',
-//                        'items' => array(
-//                            array('label' => 'Action', 'url' => '#'),
-//                            array('label' => 'Another action', 'url' => '#'),
-//                            array(
-//                                'label' => 'Something else here',
-//                                'url' => '#'
-//                            ),
-//                            '---',
-//                            array('label' => 'NAV HEADER'),
-//                            array('label' => 'Separated link', 'url' => '#'),
-//                            array(
-//                                'label' => 'One more separated link',
-//                                'url' => '#'
-//                            ),
-//                        )
-                   // ),
                 ),
             ),
             

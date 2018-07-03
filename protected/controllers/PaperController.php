@@ -116,6 +116,8 @@ class PaperController extends Controller
                             if($command->execute())
                             {
                                 $model->citation_id=$temp_value;
+                                $model->issue_number = $this->get_issue_number();
+                                $model->volume_number = $this->get_volume_number();
                                 if($model->save())
                                 {
                                     $model->paper_file->saveAs(Yii::app()->basePath.'/paper_storage/abaketiabcssba12f6ya14yu259wqk21c1/#u%@iewqhb48$!4baf5a1@167k3%&1aj@faggks@n$!uty#bmz/doc/'.$filename); 
@@ -149,20 +151,35 @@ class PaperController extends Controller
                 
 	}
 
-        public function get_author_id_by_email($email) {
-            $author_id=null;
-            $model=  Author::model()->findAllByAttributes(array('email'=>$email));
-            $list=  CHtml::listData($model, 'author_id','author_id');
-            foreach ($list as $value) {
-                $author_id=$value;
-            }
-            return $author_id;
-            
-            
-            
-            
+    public function get_author_id_by_email($email) {
+        $author_id=null;
+        $model=  Author::model()->findAllByAttributes(array('email'=>$email));
+        $list=  CHtml::listData($model, 'author_id','author_id');
+        foreach ($list as $value) {
+            $author_id=$value;
         }
-        
+        return $author_id;
+    }
+
+    public function get_issue_number() {
+        $issue_number = null;
+        $model =  Model_options::model()->findAllByPk('14');
+        $list=  CHtml::listData($model, 'id','option_target');
+        foreach ($list as $value) {
+            $issue_number = $value;
+        }
+        return $issue_number;
+    }
+     
+    public function get_volume_number() {
+        $vol_number = null;
+        $model =  Model_options::model()->findAllByAttributes(array('option_action_name'=>'Volume Number'));
+        $list=  CHtml::listData($model, 'id','option_target');
+        foreach ($list as $value) {
+            $vol_number = $value;
+        }
+        return $vol_number;
+    }   
         
         
 

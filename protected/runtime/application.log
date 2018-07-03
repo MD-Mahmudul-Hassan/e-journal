@@ -30441,3 +30441,255 @@ in C:\wamp\www\E-Journal\index.php (19)
 2016/06/09 23:38:35 [warning] [application] Failed to set unsafe attribute "profile_image_holder" of "Model_Email".
 in C:\wamp\www\E-Journal\protected\controllers\AuthorController.php (278)
 in C:\wamp\www\E-Journal\index.php (19)
+2018/07/03 14:50:07 [warning] [application] Failed to set unsafe attribute "paper_file" of "Model_paper".
+in E:\BackupInstallation\wamp64\www\e-journal-2\protected\controllers\PaperController.php (95)
+in E:\BackupInstallation\wamp64\www\e-journal-2\index.php (19)
+2018/07/03 14:50:07 [error] [exception.CException] CException: PaperController and its behaviors do not have a method or closure named "get_issue_number". in E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\base\CComponent.php:266
+Stack trace:
+#0 E:\BackupInstallation\wamp64\www\e-journal-2\protected\controllers\PaperController.php(119): CComponent->__call('get_issue_numbe...', Array)
+#1 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\actions\CInlineAction.php(49): PaperController->actionCreate()
+#2 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CController.php(291): CFilterChain->run()
+#9 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CWebApplication.php(282): CController->run('create')
+#11 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('paper/create')
+#12 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 E:\BackupInstallation\wamp64\www\e-journal-2\index.php(19): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=paper/create
+HTTP_REFERER=http://e-journal.io/index.php?r=paper/create
+---
+2018/07/03 14:50:33 [warning] [application] Failed to set unsafe attribute "paper_file" of "Model_paper".
+in E:\BackupInstallation\wamp64\www\e-journal-2\protected\controllers\PaperController.php (95)
+in E:\BackupInstallation\wamp64\www\e-journal-2\index.php (19)
+2018/07/03 14:50:33 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1364 Field 'volume_number' doesn't have a default value. The SQL statement executed was: INSERT INTO `tbl_paper` (`author_id`, `paper_title`, `paper_field`, `paper_subject`, `paper_abstract`, `paper_state`, `citation_id`, `issue_number`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7).
+in E:\BackupInstallation\wamp64\www\e-journal-2\protected\controllers\PaperController.php (120)
+in E:\BackupInstallation\wamp64\www\e-journal-2\index.php (19)
+2018/07/03 14:50:33 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1364 Field 'volume_number' doesn't have a default value. The SQL statement executed was: INSERT INTO `tbl_paper` (`author_id`, `paper_title`, `paper_field`, `paper_subject`, `paper_abstract`, `paper_state`, `citation_id`, `issue_number`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7) in E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 E:\BackupInstallation\wamp64\www\e-journal-2\protected\controllers\PaperController.php(120): CActiveRecord->save()
+#3 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\actions\CInlineAction.php(49): PaperController->actionCreate()
+#4 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('paper/create')
+#14 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 E:\BackupInstallation\wamp64\www\e-journal-2\index.php(19): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=paper/create
+HTTP_REFERER=http://e-journal.io/index.php?r=paper/create
+---
+2018/07/03 14:53:38 [warning] [application] Failed to set unsafe attribute "paper_file" of "Model_paper".
+in E:\BackupInstallation\wamp64\www\e-journal-2\protected\controllers\PaperController.php (95)
+in E:\BackupInstallation\wamp64\www\e-journal-2\index.php (19)
+2018/07/03 14:53:39 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1364 Field 'acceptance_date' doesn't have a default value. The SQL statement executed was: INSERT INTO `tbl_paper` (`author_id`, `paper_title`, `paper_field`, `paper_subject`, `paper_abstract`, `paper_state`, `citation_id`, `issue_number`, `volume_number`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8).
+in E:\BackupInstallation\wamp64\www\e-journal-2\protected\controllers\PaperController.php (121)
+in E:\BackupInstallation\wamp64\www\e-journal-2\index.php (19)
+2018/07/03 14:53:39 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1364 Field 'acceptance_date' doesn't have a default value. The SQL statement executed was: INSERT INTO `tbl_paper` (`author_id`, `paper_title`, `paper_field`, `paper_subject`, `paper_abstract`, `paper_state`, `citation_id`, `issue_number`, `volume_number`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8) in E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 E:\BackupInstallation\wamp64\www\e-journal-2\protected\controllers\PaperController.php(121): CActiveRecord->save()
+#3 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\actions\CInlineAction.php(49): PaperController->actionCreate()
+#4 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('paper/create')
+#14 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 E:\BackupInstallation\wamp64\www\e-journal-2\index.php(19): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=paper/create
+HTTP_REFERER=http://e-journal.io/index.php?r=paper/create
+---
+2018/07/03 14:54:07 [warning] [application] Failed to set unsafe attribute "paper_file" of "Model_paper".
+in E:\BackupInstallation\wamp64\www\e-journal-2\protected\controllers\PaperController.php (95)
+in E:\BackupInstallation\wamp64\www\e-journal-2\index.php (19)
+2018/07/03 15:11:28 [warning] [application] Failed to set unsafe attribute "paper_file" of "Model_paper".
+in E:\BackupInstallation\wamp64\www\e-journal-2\protected\controllers\PaperController.php (95)
+in E:\BackupInstallation\wamp64\www\e-journal-2\index.php (19)
+2018/07/03 15:13:35 [warning] [application] Failed to set unsafe attribute "paper_file" of "Model_paper".
+in E:\BackupInstallation\wamp64\www\e-journal-2\protected\controllers\PaperController.php (520)
+in E:\BackupInstallation\wamp64\www\e-journal-2\index.php (19)
+2018/07/03 15:15:22 [warning] [application] Failed to set unsafe attribute "paper_file" of "Model_paper".
+in E:\BackupInstallation\wamp64\www\e-journal-2\protected\controllers\EditorController.php (304)
+in E:\BackupInstallation\wamp64\www\e-journal-2\index.php (19)
+2018/07/03 15:16:05 [warning] [application] Failed to set unsafe attribute "paper_file" of "Model_paper".
+in E:\BackupInstallation\wamp64\www\e-journal-2\protected\controllers\EditorController.php (304)
+in E:\BackupInstallation\wamp64\www\e-journal-2\index.php (19)
+2018/07/03 15:41:25 [error] [php] file_get_contents(E:\BackupInstallation\wamp64\www\e-journal-2\protected/accepted_papers/ty#@kio12e2qz34%!@216splk53sS1/j#1%!23JqZdru%@_3349kp/accepted_pdf_versions/1835968017_test my paper.docx): failed to open stream: No such file or directory (E:\BackupInstallation\wamp64\www\e-journal-2\protected\controllers\EditorController.php:357)
+Stack trace:
+#0 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#1 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\filters\CFilterChain.php(133): EditorController->runAction()
+#4 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\filters\CInlineFilter.php(58): EditorController->filterAccessControl()
+#7 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CController.php(291): CFilterChain->run()
+#9 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CController.php(265): EditorController->runActionWithFilters()
+#10 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CWebApplication.php(282): EditorController->run()
+#11 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 E:\BackupInstallation\wamp64\www\e-journal-2\index.php(19): CWebApplication->run()
+REQUEST_URI=/index.php?r=editor/downloadpaperaspdf_by_editor&paper_title=1835968017_test+my+paper.docx
+in E:\BackupInstallation\wamp64\www\e-journal-2\protected\controllers\EditorController.php (357)
+in E:\BackupInstallation\wamp64\www\e-journal-2\index.php (19)
+2018/07/03 15:42:51 [error] [php] file_get_contents(E:\BackupInstallation\wamp64\www\e-journal-2\protected/accepted_papers/a54d4a6d45f6a544dfa5654/t4d65s4v5h4j4s65a4h46/accepted_pdf_versions/1835968017_test my paper.docx): failed to open stream: No such file or directory (E:\BackupInstallation\wamp64\www\e-journal-2\protected\controllers\EditorController.php:357)
+Stack trace:
+#0 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#1 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\filters\CFilterChain.php(133): EditorController->runAction()
+#4 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\filters\CInlineFilter.php(58): EditorController->filterAccessControl()
+#7 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CController.php(291): CFilterChain->run()
+#9 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CController.php(265): EditorController->runActionWithFilters()
+#10 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CWebApplication.php(282): EditorController->run()
+#11 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 E:\BackupInstallation\wamp64\www\e-journal-2\index.php(19): CWebApplication->run()
+REQUEST_URI=/index.php?r=editor/downloadpaperaspdf_by_editor&paper_title=1835968017_test+my+paper.docx
+in E:\BackupInstallation\wamp64\www\e-journal-2\protected\controllers\EditorController.php (357)
+in E:\BackupInstallation\wamp64\www\e-journal-2\index.php (19)
+2018/07/03 15:43:47 [error] [php] file_get_contents(E:\BackupInstallation\wamp64\www\e-journal-2\protected/accepted_papers/a54d4a6d45f6a544dfa5654/t4d65s4v5h4j4s65a4h46/accepted_pdf_versions/1835968017_test my paper.docx): failed to open stream: No such file or directory (E:\BackupInstallation\wamp64\www\e-journal-2\protected\controllers\EditorController.php:357)
+Stack trace:
+#0 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#1 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\filters\CFilterChain.php(133): EditorController->runAction()
+#4 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\filters\CInlineFilter.php(58): EditorController->filterAccessControl()
+#7 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CController.php(291): CFilterChain->run()
+#9 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CController.php(265): EditorController->runActionWithFilters()
+#10 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CWebApplication.php(282): EditorController->run()
+#11 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 E:\BackupInstallation\wamp64\www\e-journal-2\index.php(19): CWebApplication->run()
+REQUEST_URI=/index.php?r=editor/downloadpaperaspdf_by_editor&paper_title=1835968017_test+my+paper.docx
+in E:\BackupInstallation\wamp64\www\e-journal-2\protected\controllers\EditorController.php (357)
+in E:\BackupInstallation\wamp64\www\e-journal-2\index.php (19)
+2018/07/03 15:54:14 [error] [exception.CException] CException: Object configuration must be an array containing a "class" element. in E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\YiiBase.php:193
+Stack trace:
+#0 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#1 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\base\CModule.php(523): CModule->getComponent('bootstrap')
+#2 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\base\CApplication.php(163): CModule->preloadComponents()
+#3 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\YiiBase.php(125): CApplication->__construct(Array)
+#4 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\YiiBase.php(98): YiiBase::createApplication('CWebApplication', 'E:\\BackupInstal...')
+#5 E:\BackupInstallation\wamp64\www\e-journal-2\index.php(19): YiiBase::createWebApplication('E:\\BackupInstal...')
+#6 {main}
+REQUEST_URI=/index.php?r=paper/downloadindex
+HTTP_REFERER=http://e-journal.io/index.php?r=paper/view&id=1000000007
+---
+2018/07/03 16:12:28 [error] [exception.CException] CException: Property "TbNavbar.style" is not defined. in E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\base\CComponent.php:173
+Stack trace:
+#0 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CWidgetFactory.php(161): CComponent->__set('style', 'border:1px soli...')
+#1 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(PaperController), 'TbNavbar', Array)
+#2 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CBaseController.php(172): CBaseController->createWidget('ext.yiibooster....', Array)
+#3 E:\BackupInstallation\wamp64\www\e-journal-2\themes\new_styles\views\layouts\main.php(131): CBaseController->widget('ext.yiibooster....', Array)
+#4 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CBaseController.php(126): require('E:\\BackupInstal...')
+#5 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\BackupInstal...', Array, true)
+#6 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('E:\\BackupInstal...', Array, true)
+#7 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CBaseController.php(206): COutputProcessor->run()
+#10 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 E:\BackupInstallation\wamp64\www\e-journal-2\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#12 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CBaseController.php(126): require('E:\\BackupInstal...')
+#13 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\BackupInstal...', Array, true)
+#14 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CController.php(784): CBaseController->renderFile('E:\\BackupInstal...', Array, true)
+#15 E:\BackupInstallation\wamp64\www\e-journal-2\protected\controllers\PaperController.php(431): CController->render('download_index_...', Array)
+#16 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\actions\CInlineAction.php(49): PaperController->actionDownloadindex()
+#17 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CController.php(291): CFilterChain->run()
+#24 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CWebApplication.php(282): CController->run('downloadindex')
+#26 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('paper/downloadi...')
+#27 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#28 E:\BackupInstallation\wamp64\www\e-journal-2\index.php(19): CApplication->run()
+#29 {main}
+REQUEST_URI=/index.php?r=paper/downloadindex
+HTTP_REFERER=http://e-journal.io/index.php?r=paper/view&id=1000000007
+---
+2018/07/03 16:37:41 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CController.php:336
+Stack trace:
+#0 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CController.php(291): CFilterChain->run()
+#7 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CWebApplication.php(282): CController->run('authorpanel')
+#9 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('author/authorpa...')
+#10 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 E:\BackupInstallation\wamp64\www\e-journal-2\index.php(19): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=author/authorpanel
+HTTP_REFERER=http://e-journal.io/index.php?r=site/index
+---
+2018/07/03 16:38:06 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CController.php:336
+Stack trace:
+#0 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CController.php(291): CFilterChain->run()
+#7 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CWebApplication.php(282): CController->run('authorpanel')
+#9 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('author/authorpa...')
+#10 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 E:\BackupInstallation\wamp64\www\e-journal-2\index.php(19): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=author/authorpanel
+HTTP_REFERER=http://e-journal.io/index.php?r=site/index
+---
+2018/07/03 16:38:17 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CController.php:336
+Stack trace:
+#0 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CController.php(291): CFilterChain->run()
+#7 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CWebApplication.php(282): CController->run('authorpanel')
+#9 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('author/authorpa...')
+#10 E:\BackupInstallation\wamp64\www\E-Journal\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 E:\BackupInstallation\wamp64\www\e-journal-2\index.php(19): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=author/authorpanel
+HTTP_REFERER=http://e-journal.io/index.php?r=site/index
+---

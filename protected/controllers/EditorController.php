@@ -351,7 +351,7 @@ class EditorController extends Controller
                     $checking_paper_status=$this->check_papers_current_status_for_next_action_for_pdf($paper_title);                
                     if($checking_paper_status==='Author has submitted the final copy of the paper in both format.')
                     {
-                        $src=Yii::app()->basePath.'/accepted_papers/ty#@kio12e2qz34%!@216splk53sS1/j#1%!23JqZdru%@_3349kp/accepted_pdf_versions/'.$paper_title;                             
+                        $src=Yii::app()->basePath.'/accepted_papers/ty#@kio12e2qz34%!@216splk53sS1/j#1%!23JqZdru%@_3349kp/accepted_pdf_versions/'.$name;
                         if(file_exists($src) && $name!=null)
                         {            
                             Yii::app()->getRequest()->sendFile( "$name" , file_get_contents( $src ) );

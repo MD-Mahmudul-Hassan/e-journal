@@ -353,10 +353,8 @@ class AuthorController extends Controller
                                                //$model->paper_file_pdf->saveAs(Yii::app()->basePath.'/paper_storage/abaketiabcssba12f6ya14yu259wqk21c1/#u%@iewqhb48$!4baf5a1@167k3%&1aj@faggks@n$!uty#bmz/pdf/'.$filename2); 
                                                //$updating_paper_state_as_final_copy_submitted;
                                                $model->paper_file->saveAs(Yii::app()->basePath.'/accepted_papers/ty#@kio12e2qz34%!@216splk53sS1/j#1%!23JqZdru%@_3349kp/accepted_doc_or_docx_papers/'.$filename);
-                                               $model->paper_file->saveAs(Yii::app()->basePath.'/accepted_papers/ty#@kio12e2qz34%!@216splk53sS1/j#1%!23JqZdru%@_3349kp/accepted_pdf_versions/'.$filename2);
-
-
-                                               Yii::app()->user->setFlash('success', "<h4>Final copy of the paper is submitted successfully! Keep patience to get your paper published. Thank you.</h4>");
+                                               $model->paper_file_pdf->saveAs(Yii::app()->basePath.'/accepted_papers/ty#@kio12e2qz34%!@216splk53sS1/j#1%!23JqZdru%@_3349kp/accepted_pdf_versions/'.$filename2);
+                                               Yii::app()->user->setFlash('success', "<h4>Final copy of the paper is submitted successfully! Keep patience to get your paper published. Thank you.</h4>".$filename2);
                                             }
                                             else 
                                             {
